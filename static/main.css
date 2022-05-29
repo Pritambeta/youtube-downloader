@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.dash-form {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(70, 70, 70, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    width: 80%;
+    margin: auto;
+}
+.input {
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border: solid 0.1px #eee;
+    outline: solid 2px transparent;
+    transition: 0.2s;
+    border-radius: 4px;
+}
+.input:focus {
+    outline: solid 2px rgb(77, 109, 255);
+}
+.btn {
+    background: #fff;
+    border: solid 0.1px #eee;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: solid 2px transparent;
+    transition: 0.2s
+}
+.btn:focus {
+    outline: solid 2px rgb(77, 109, 255);
+}
+.spinner {
+    width: 30px;
+    fill: rgb(77, 109, 255);
+    animation: spin 0.6s linear infinite;
+}
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.select {
+    width: 100%;
+    padding: 5px;
+    border: solid 0.1px #eee;
+    outline: none;
+}
+.getLink {
+    width: 80%;
+}
+.btnBox {
+    display: flex;
+    justify-content: space-between;
+}
+.downloadLink {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+.downloadLink:hover {
+    text-decoration: underline;
+}
+.selectForm {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thumbnail-image {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border: solid 6px #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(70, 70, 70, 0.12);
+    margin: auto;
+}
+.title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    width: 100%;
+}
